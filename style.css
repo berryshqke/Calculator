@@ -1,3 +1,4 @@
+/* margin and the alignment of the calculator */
 body{
     margin: 0;
     display: flex;
@@ -5,6 +6,8 @@ body{
     align-items: center;
     height: 100vh;
 }
+
+/* Background colour, font, and size */
 #calculator{
     font-family: Arial, Helvetica, sans-serif;
     background-color: hsl(0, 0%, 15%);
@@ -12,12 +15,16 @@ body{
     max-width: 60vh;
     overflow: hidden;
 }
+
+/* the layout of the buttons */
 #key{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 25px;
 }
+
+/* the size, and colour of the buttons */
 button{
     width: 10vh;
     height: 10vh;
@@ -29,10 +36,12 @@ button{
     cursor: pointer;
 }
 
+/* the colour of the operator buttons */
 #orange{
     background-color: orange;
 }
 
+/* the size and background colour of the display */
 #display{
     width: 60vh;
     padding: 1vh;
