@@ -22,5 +22,10 @@ function calculate(){
 
 //removes the last entered symbol/number
 function remove(){
-    display.value = display.value.slice(0, -1);
+    if(display.value.toLowerCase() == 'error' || display.value.toLowerCase() == 'infinity' || display.value.toLowerCase() == 'nan'){
+        display.value = "";
+    }
+    else{
+        display.value = display.value.slice(0, -1);
+    }
 }
